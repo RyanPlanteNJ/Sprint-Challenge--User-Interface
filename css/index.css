@@ -147,6 +147,11 @@ nav a:hover{
     align-items: flex-start;
 }
 
+.split h2{
+    margin-top: 20px;
+}
+
+
 .split h3{
     padding: 10px;
     font-size: 15px;
