@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -71,6 +71,38 @@ p {
     margin: 0 auto;
 }
 
+header nav{
+	display: flex;
+	justify-content: space-between;
+    align-items: baseline;
+    /* align-content: space-between; */
+    margin: 10px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: .6s;
+}
+
+nav a:hover{
+  font-size: 19px;
+    color: black;
+  animation-name: example;
+  animation-duration: 6s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.jumbo{
+    margin: 20px;
+}
+.jumbo img{
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +114,12 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+.top-content .about-text-container{
+  padding: 0 1%;
+  padding-bottom: 20px;
 }
 
 .middle-content {
@@ -101,6 +138,35 @@ p {
     justify-content: space-evenly;
 }
 
+.about .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.split{
+    width: 48%;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    align-items: flex-start;
+}
+
+.split h2{
+    margin-top: 20px;
+}
+
+
+.split h3{
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    border: 2px black solid;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -111,6 +177,47 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+#box1{
+    background: teal;
+}
+
+#box2{
+    background: gold;
+}
+
+#box3{
+    background: cadetblue;
+}
+
+#box4{
+    background: coral;
+}
+
+#box5{
+      background: crimson;
+}
+
+#box6{
+      background: forestgreen;
+}
+
+#box7{
+      background: darkorchid;
+}
+
+#box8{
+      background: hotpink;
+}
+
+#box9{
+      background: indigo;
+}
+
+#box10{
+      background: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +250,8 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover{
+  color:white;
 }
